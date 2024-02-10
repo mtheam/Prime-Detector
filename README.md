@@ -1,2 +1,2 @@
 # Prime-Detector
-A multi-threaded prime number detector that takes an input file of numbers and a user specified number of threads to use for processes, printing any prime numbers found. Use of semphore allows Threads process input numbers from a mutex-protected queue. Use of thread pool allows for thread reuse. 
+A multi-threaded prime number detector that takes an input file of numbers and a user specified number of threads, printing any prime numbers found. Processes input numbers from a mutex-protected queue and parallelizes individual sub-calculations for each number. Use of thread pool allows for thread reuse, and thread cancellation considerably speeds processing time for very large numbers. 
